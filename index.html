@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() { return originalFetch; },
+            set: function(val) { originalFetch = val; },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          console.warn('Failed to inject fetch setter wrapper:', e);
+        }
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    
+    <!-- Primary Page Metadata & SEO -->
+    <title>TakaTrek – ডিজিটাল বাকি ও দেনা-পাওনা খাতা | Digital Ledger & Due Tracker</title>
+    <meta name="description" content="TakaTrek (টাকা ট্রেক) - আধুনিক ও সহজ ডিজিটাল হিসাব খাতা। বাকির হিসাব, দৈনিক ক্যাশ কালেকশন, কাস্টমার রিমাইন্ডার এবং অফলাইন ও ক্লাউড অটো ব্যাকআপ।" />
+    <meta name="keywords" content="TakaTrek, takatrek, টাকা ট্রেক, ডিজিটাল খাতা, বাকি খাতা, ledger, due tracker, হিসাব খাতা, business accounting, bangla ledger" />
+    <meta name="author" content="TakaTrek" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- OpenGraph Social Share Cards -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="TakaTrek" />
+    <meta property="og:title" content="TakaTrek – Smart Digital Ledger & Due Tracker" />
+    <meta property="og:description" content="ব্যবসার বাকি, বকেয়া এবং ক্যাশ লেনদেনের সহজ ডিজিটাল খাতা। মোবাইল ও ট্যাবলেটে ক্লাউড ও অফলাইন ব্যাকআপ সহ।" />
+    <meta property="og:image" content="/icon-512.png" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="TakaTrek – Smart Digital Ledger & Due Tracker" />
+    <meta name="twitter:description" content="TakaTrek (টাকা ট্রেক) - সহজ ও দ্রুত ডিজিটাল হিসাব খাতা। বাকির হিসাব ও দৈনিক কালেকশন সহজে রাখুন।" />
+    <meta name="twitter:image" content="/icon-512.png" />
+
+    <!-- Schema.org JSON-LD Structured Data for WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "TakaTrek",
+      "alternateName": ["টাকা ট্রেক", "TakaTrek Ledger"],
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "description": "A smart, offline-first digital due tracking ledger and collection tracker designed for small business owners and shopkeepers.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BDT"
+      },
+      "featureList": [
+        "Customer due tracking",
+        "Daily payment collection",
+        "Offline-first synchronization",
+        "SMS and WhatsApp reminder generation",
+        "PDF and CSV ledger export",
+        "QR code customer quick-lookups"
+      ]
+    }
+    </script>
+
+    <!-- Icons & Manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+  </head>
+  <body class="bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

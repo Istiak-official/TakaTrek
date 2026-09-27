@@ -1,0 +1,12 @@
+{
+  "projectId": "taka-trek",
+  "appId": "1:660221168791:web:2c6902157866fcab51add2",
+  "apiKey": "AIzaSyAqxkbz6o4xu1P7AN2z3vqXBdI84Inkqwk",
+  "authDomain": "taka-trek.firebaseapp.com",
+  "firestoreDatabaseId": "main",
+  "storageBucket": "taka-trek.firebasestorage.app",
+  "messagingSenderId": "660221168791",
+  "measurementId": "",
+  "oAuthClientId": "660221168791-e9rur8c6gs9nt1aovb41g8l3bkjh9fnq.apps.googleusercontent.com",
+  "recaptchaSiteKey": ""
+}

@@ -1,11 +1,45 @@
-<div align="center">
+# Challan Track
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A modern web application for tracking and managing challans, powered by Google Gemini.
 
-  <h1>Built with AI Studio</h2>
+## Requirements
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+* Node.js 18+
+* npm
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Getting Started
 
-</div>
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/your-username/challan-track.git
+cd challan-track
+npm install
+```
+
+Create a `.env.local` file in the project root:
+
+```env
+GEMINI_API_KEY=your_gemini_api_key
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## Deployment
+
+The application can be deployed to any platform that supports Node.js, such as Vercel.
+
+Configure the following environment variable in your hosting platform before deployment:
+
+```env
+GEMINI_API_KEY=your_gemini_api_key
+```
+
+## Security
+
+* Do not commit `.env.local` to version control.
+* Store API keys using your hosting provider's environment variable system.
