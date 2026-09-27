@@ -1,6 +1,6 @@
-# Challan Track
+# TakaTrek
 
-A modern web application for tracking and managing challans, powered by Google Gemini.
+A modern web application for tracking and managing your daily life.
 
 ## Requirements
 
@@ -12,8 +12,8 @@ A modern web application for tracking and managing challans, powered by Google G
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/challan-track.git
-cd challan-track
+git clone https://github.com/your-username/TakaTrek.git
+cd TakaTrek
 npm install
 ```
 
@@ -31,7 +31,7 @@ npm run dev
 
 ## Deployment
 
-The application can be deployed to any platform that supports Node.js, such as Vercel.
+The application can be deployed to any platform that supports Node.js, such as Vercel, Netlify.
 
 Configure the following environment variable in your hosting platform before deployment:
 
